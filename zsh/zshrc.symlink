@@ -41,8 +41,8 @@ export NSS_SSL_CBC_RANDOM_IV=0
 export PLAY_PATH=$HOME/.play
 export PATH="${PLAY_PATH}:${PATH}"
 
-export NODE_HOME=/opt/node
+export NODE_HOME=$HOME/.node
 export PATH="${NODE_HOME}/bin:${PATH}"
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
 export PATH="${JAVA_HOME}/bin:${PATH}"
