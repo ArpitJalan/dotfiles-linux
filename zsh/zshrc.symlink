@@ -20,32 +20,3 @@ compinit
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.zsh) source $config_file
-#setxkbmap -model abnt2 -layout br -variant abnt2
-
-# rbenv shit
-export RBENV_ROOT="${HOME}/.rbenv"
-
-if [ -d "${RBENV_ROOT}" ]; then
-  export PATH="${RBENV_ROOT}/bin:${PATH}"
-  eval "$(rbenv init -)"
-fi
-
-# set a custom and untracked enviroment for your machine
-# (to export some machine-specific vars, for example)
-if [ -e "${HOME}/.customenv" ]; then
-  source ${HOME}/.customenv
-fi
-
-export NSS_SSL_CBC_RANDOM_IV=0
-
-export PLAY_PATH=$HOME/.play
-export PATH="${PLAY_PATH}:${PATH}"
-
-export NODE_HOME=$HOME/.node
-export PATH="${NODE_HOME}/bin:${PATH}"
-
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
-export PATH="${JAVA_HOME}/bin:${PATH}"
-
-export ECM_HOME=${HOME}/.ecm
-export JBOSS_HOME=${ECM_HOME}/JBoss-7.1.1/
