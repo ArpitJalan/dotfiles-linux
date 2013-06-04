@@ -46,3 +46,6 @@ export PATH="${NODE_HOME}/bin:${PATH}"
 
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
 export PATH="${JAVA_HOME}/bin:${PATH}"
+
+export ECM_HOME=${HOME}/.ecm
+export JBOSS_HOME=${ECM_HOME}/JBoss-7.1.1/

@@ -71,7 +71,7 @@ todo(){
 svn_graph(){
 if [ -d .svn ]; then
   echo `svn stat | awk '{ split($0, a, " ")  arr[a[1]]++ }END{ print arr["M"] ? arr["M"] : "0", arr["A"] ? arr["A"] : "0", arr["?"] ? arr["?"] : "0", arr["D"] ? arr["D"] : "0", arr["!"] ? arr["!"] : "0" }' | spark`
-fi 
+fi
 }
 
 directory_name(){

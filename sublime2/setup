@@ -11,6 +11,8 @@ ln -s "$ZSH/sublime2/User" "$sublime_dir"
 # Grab the Soda theme
 cd "$sublime_dir"
 git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
+git clone https://github.com/jisaacks/GitGutter
+git clone https://github.com/SublimeLinter/SublimeLinter.git
 
 # Grab the Sublime Package Control
 rm -rf "$HOME/.config/sublime-text-2/Installed Packages/Package Control.sublime-package"

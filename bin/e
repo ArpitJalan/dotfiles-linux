@@ -15,8 +15,8 @@
 #   # => opens the specified directory in your editor
 
 if [ -z "$1" ]; then
-  exec $EDITOR .
+  exec $EDITOR . &
 else
-  exec $EDITOR "$1"
+  exec $EDITOR "$1" &
 fi
 
