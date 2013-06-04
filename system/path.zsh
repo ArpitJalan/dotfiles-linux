@@ -9,9 +9,6 @@ if [ -d "${RBENV_ROOT}" ]; then
   eval "$(rbenv init -)"
 fi
 
-# ssh -X
-export NSS_SSL_CBC_RANDOM_IV=0
-
 # play framework
 export PLAY_PATH=/opt/play
 export PATH="${PLAY_PATH}:${PATH}"
