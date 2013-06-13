@@ -1,2 +1,0 @@
-#!/bin/bash
-alias pbpaste='xsel --clipboard --output'

@@ -13,8 +13,8 @@
 	"matchBracketsSquare": true,
 	"rulers":
 	[
-		80, // most langs
-		120 // java
+		80,
+		120
 	],
 	"show_minimap": false,
 	"soda_folder_icons": true,

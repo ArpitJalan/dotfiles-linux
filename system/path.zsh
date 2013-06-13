@@ -22,5 +22,5 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
 export PATH="${JAVA_HOME}/bin:${PATH}"
 
 # totvs ecm
-export ECM_HOME=${HOME}/.ecm
+export ECM_HOME=/opt/byYou/SocialECM
 export JBOSS_HOME=${ECM_HOME}/JBoss-7.1.1/
