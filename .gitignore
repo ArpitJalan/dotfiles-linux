@@ -1,13 +1,14 @@
-sublime2/User/Package\ Control.sublime-settings
-vim/vim.symlink/.netrwhist
 .rbenv-version
 */.rbenv-version
+
+vim/vim.symlink/.netrwhist
 vim/vim.symlink/vim.symlink
-sublime2/Packages/TrailingSpaces/trailing_spaces.pyc
-sublime2/User/Package Control.last-run
 vim/vim.symlink/backups/*
+
+sublime2/Packages/TrailingSpaces/trailing_spaces.pyc
+sublime2/User/Package\ Control.last-run
 sublime2/Packages/CoffeeScript/CoffeeScript-Sublime-Plugin-master/
 sublime2/User/SVN.errors.log
-"sublime2/User/Package Control.last-run"
-
-sublime2/User/Side Bar.sublime-settings
+sublime2/User/Package\ Control.last-run
+sublime2/User/Side\ Bar.sublime-settings
+sublime2/User/Package\ Control.sublime-settings
