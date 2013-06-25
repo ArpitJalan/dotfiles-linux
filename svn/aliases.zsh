@@ -6,7 +6,8 @@ alias svnr='svn revert'
 
 # shows only relevant changed files (for a java project)
 svs() {
-  svn stat | grep -v "classpath" | grep -v "/bin" | grep -v ".settings" | grep -v ".project" | grep -v "target"
+  svn stat |  grep "^ \w"
+  #grep -v "classpath" | grep -v "/bin" | grep -v ".settings" | grep -v ".project" | grep -v "target"
 }
 
 function svndv {
