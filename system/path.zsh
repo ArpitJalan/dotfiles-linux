@@ -15,7 +15,7 @@ export PATH="${PATH}:${PLAY_HOME}"
 
 # node.js
 export NODE_HOME=/opt/node
-export PATH="${PATH}:${NODE_HOME}/bin"
+export PATH="${PATH}:${NODE_HOME}/bin:${NODE_HOME}/deps/npm/bin"
 
 # java
 export JAVA_HOME=/usr/lib/jvm/java-7-oracle/
@@ -25,7 +25,11 @@ export PATH="${PATH}:${JAVA_HOME}/bin"
 export ELIXIR_HOME=/opt/elixir
 export PATH="${PATH}:${ELIXIR_HOME}/bin"
 
+# gradle
+export GRADLE_HOME=/opt/gradle
+export PATH="${PATH}:${GRADLE_HOME}/bin"
+
 # totvs ecm
-export ECM_HOME=/opt/byYou/SocialECM
-export JBOSS_HOME=${ECM_HOME}/JBoss-7.1.1/
+export ECM_HOME=/opt/fluig
+export JBOSS_HOME=${ECM_HOME}/jboss-as-7.2.0.Final/
 
