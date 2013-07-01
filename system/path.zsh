@@ -33,3 +33,5 @@ export PATH="${PATH}:${GRADLE_HOME}/bin"
 export ECM_HOME=/opt/fluig
 export JBOSS_HOME=${ECM_HOME}/jboss-as-7.2.0.Final/
 
+# pidgin-sipe crap
+# export NSS_SSL_CBC_RANDOM_IV=0

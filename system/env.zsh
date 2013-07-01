@@ -1,4 +1,4 @@
-export EDITOR='subl'
-
-# pidgin-sipe crap
-# export NSS_SSL_CBC_RANDOM_IV=0
+if [ "$EDITOR" = "" ] ; then
+  # Use sublime for my editor.
+  export EDITOR='subl'
+fi
