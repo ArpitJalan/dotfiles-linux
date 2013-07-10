@@ -11,17 +11,17 @@ svs() {
 }
 
 function sdf {
-		svn diff $@ | vim -
+  svn diff $@ | vim -
 }
 
 
 function svnls {
-	if [ -z "$1" ]; then
-		svs
-	else
-		revision=$1
-		previous=$((revision-1))
-		svn diff -r $revision:$previous --summarize
-	fi
+  if [ -z "$1" ]; then
+    svs
+  else
+    revision=$1
+    previous=$((revision-1))
+    svn diff -r $revision:$previous --summarize
+  fi
 }
 
