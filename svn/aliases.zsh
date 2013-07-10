@@ -14,14 +14,11 @@ function sdf {
 		svn diff $@ | vim -
 }
 
-
 function svnls {
 	if [ -z "$1" ]; then
 		svs
 	else
-		revision=$1
-		previous=$((revision-1))
-		svn diff -r $revision:$previous --summarize
+		svn log -v -r $1
 	fi
 }
 
