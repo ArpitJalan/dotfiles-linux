@@ -1,5 +1,6 @@
 alias svnu='svn up'
 alias svns='svn stat'
+alias sstt='svn stat |  grep "^ \w"'
 alias svnl='svn log -l 10'
 alias svnc='svn commit'
 alias svnr='svn revert'
@@ -9,7 +10,7 @@ svs() {
   svn stat | grep -v "classpath" | grep -v "/bin" | grep -v ".settings" | grep -v ".project" | grep -v "target"
 }
 
-function svndv {
+function sdf {
 		svn diff $@ | vim -
 }
 
