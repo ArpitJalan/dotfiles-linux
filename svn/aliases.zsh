@@ -1,10 +1,27 @@
 alias svnu='svn up'
-alias svnr='svn revert'
-alias sst='svn stat'
+alias svns='svn stat'
 alias sstt='svn stat |  grep "^ \w"'
-alias slog='svn log -l 10'
-alias scm='svn commit'
+alias svnl='svn log -l 10'
+alias svnc='svn commit'
+alias svnr='svn revert'
+
+# shows only relevant changed files (for a java project)
+svs() {
+  svn stat | grep -v "classpath" | grep -v "/bin" | grep -v ".settings" | grep -v ".project" | grep -v "target"
+}
 
 function sdf {
-  svn diff $@ | vim -
+		svn diff $@ | vim -
 }
+
+
+function svnls {
+	if [ -z "$1" ]; then
+		svs
+	else
+		revision=$1
+		previous=$((revision-1))
+		svn diff -r $revision:$previous --summarize
+	fi
+}
+
