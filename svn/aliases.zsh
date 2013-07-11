@@ -11,14 +11,14 @@ svs() {
 }
 
 function sdf {
-		svn diff $@ | vim -
+  svn diff $@ | vim -
 }
 
 function svnls {
-	if [ -z "$1" ]; then
-		svs
-	else
-		svn log -v -r $1
-	fi
+  if [ -z "$1" ]; then
+    svs
+  else
+    svn log -v -r $1
+  fi
 }
 
