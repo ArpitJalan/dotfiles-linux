@@ -1,0 +1,2 @@
+#!/bin/sh
+~/netbeans-7.3.1/bin/netbeans --laf GTK
