@@ -1,6 +1,6 @@
 alias svnu='svn up'
-alias svns='svn stat'
-alias sstt='svn stat |  grep "^ \w"'
+alias sst='svn stat'
+alias sstt='svn stat |  grep "^\w "'
 alias svnl='svn log -l 10'
 alias svnc='svn commit'
 alias svnr='svn revert'
