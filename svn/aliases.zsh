@@ -50,7 +50,7 @@ function svncm {
 		cat $CUSTOM_SVN/{updated,added} > $CUSTOM_SVN/commit
 		paths=`sed ':init ; $ b end ; N ; s/\n/ / ; b init ; :end' $CUSTOM_SVN/commit`
 
-		echo "svn commit -m \"$message\" $paths"
+		svn commit -m \"$message\" $paths
 	else
 		echo "Missing message\n    run: svncm \"Commit Message\""
 	fi
