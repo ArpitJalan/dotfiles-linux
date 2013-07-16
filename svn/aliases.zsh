@@ -7,7 +7,7 @@ alias svnr='svn revert'
 
 # shows only relevant changed files (for a java project)
 svs() {
-	svn stat | grep -v "classpath" | grep -v "/bin" | grep -v ".settings" | grep -v ".project" | grep -v "target"
+	svn st | grep -v -e ".classpath" -e "/bin" -e ".settings" -e ".project" -e "target"
 }
 
 function sdf {
@@ -24,10 +24,9 @@ function svnls {
 
 function svnp {
 	CUSTOM_SVN=".svn/custom"
+
 	# create custom folder if it doesn't exist
-	if [ ! -d "$CUSTOM_SVN" ]; then
-		mkdir $CUSTOM_SVN
-	fi
+	[ -d "$CUSTOM_SVN" ] || mkdir $CUSTOM_SVN
 
 	svs > $CUSTOM_SVN/svs
 
@@ -56,7 +55,9 @@ function svncm {
 	fi
 }
 
-function ss {
+# ss is already another tool to investigate sockets, renaming...
+# function ss {
+function sstm {
 	svnp
 	updated=`cat $CUSTOM_SVN/updated`
 	if [ -n "$updated" ]; then
@@ -84,5 +85,4 @@ function ss {
 		echo -e "\033[35mUnversioned:\033[39m"
 		echo $unversioned
 	fi
-
 }
