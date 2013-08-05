@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ -z "$OPEN" ]; then
+  export OPEN="xdg-open"
+fi
+if [ -z "$1" ]; then
+  exec $OPEN . &
+else
+  exec $OPEN "$1" &
+fi
+
