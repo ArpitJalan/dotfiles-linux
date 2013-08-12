@@ -62,7 +62,11 @@ directory_name(){
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)\n› '
+todo_count() {
+  echo $(find ~/Desktop -maxdepth 1 -type f  | wc -l)
+}
+
+export PROMPT=$'\n$(rb_prompt) in $(directory_name) $(git_dirty)$(need_push)[$(todo_count)]\n› '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
