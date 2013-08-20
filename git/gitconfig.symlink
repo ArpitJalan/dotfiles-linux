@@ -34,4 +34,4 @@
 [url "https://"]
 	insteadOf = git://
 [http]
-	postBuffer = 99999952428
+	postBuffer = 524288000
