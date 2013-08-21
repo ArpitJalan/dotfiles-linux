@@ -1,0 +1,27 @@
+{
+	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"drawWhiteSpace": true,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 10,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"matchBracketsAngle": true,
+	"matchBracketsBraces": true,
+	"matchBracketsSquare": true,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"show_minimap": false,
+	"soda_folder_icons": true,
+	"tab_size": 2,
+	"theme": "Soda Light.sublime-theme",
+	"trailing_spaces_include_current_line": false,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true
+}

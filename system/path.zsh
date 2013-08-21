@@ -10,8 +10,8 @@ if [ -d "${RBENV_ROOT}" ]; then
 fi
 
 # play framework
-export PLAY_HOME=/opt/play
-export PATH="${PATH}:${PLAY_HOME}"
+# export PLAY_HOME=/opt/play
+# export PATH="${PATH}:${PLAY_HOME}"
 
 # node.js
 export NODE_HOME=/opt/node
@@ -22,12 +22,12 @@ export PATH="${PATH}:${NODE_HOME}/bin:${NODE_HOME}/deps/npm/bin"
 #export PATH="${PATH}:${JAVA_HOME}/bin"
 
 # elixir
-export ELIXIR_HOME=/opt/elixir
-export PATH="${PATH}:${ELIXIR_HOME}/bin"
+# export ELIXIR_HOME=/opt/elixir
+# export PATH="${PATH}:${ELIXIR_HOME}/bin"
 
 # gradle
-export GRADLE_HOME=/opt/gradle
-export PATH="${PATH}:${GRADLE_HOME}/bin"
+# export GRADLE_HOME=/opt/gradle
+# export PATH="${PATH}:${GRADLE_HOME}/bin"
 
 # totvs ecm
 #export ECM_HOME=/opt/fluig
