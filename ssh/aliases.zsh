@@ -1,0 +1,1 @@
+alias ssh-cpid="ssh-copy-id -i .ssh/id_rsa.pub"
