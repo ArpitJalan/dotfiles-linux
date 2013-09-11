@@ -35,3 +35,4 @@ export PATH="${PATH}:${NODE_HOME}/bin:${NODE_HOME}/deps/npm/bin"
 
 # pidgin-sipe crap
 # export NSS_SSL_CBC_RANDOM_IV=0
+export PATH="/usr/local/heroku/bin:$PATH"

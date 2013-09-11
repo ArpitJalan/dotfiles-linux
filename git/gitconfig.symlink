@@ -23,6 +23,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = vim
+	compression = -1
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -32,6 +33,6 @@
 [help]
         autocorrect = 1
 [url "https://"]
-	insteadOf = git://
+        insteadOf = git://
 [http]
 	postBuffer = 524288000

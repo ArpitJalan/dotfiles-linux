@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"drawWhiteSpace": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_size": 10,
@@ -23,5 +23,6 @@
 	"trailing_spaces_include_current_line": false,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
 	"vintage_start_in_command_mode": true
 }
