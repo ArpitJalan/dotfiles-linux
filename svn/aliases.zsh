@@ -5,8 +5,13 @@ alias svnl='svn log -l 10'
 alias svnc='svn commit'
 alias svnr='svn revert'
 
+# remove unversioned files based on query
+function svncls {
+	sst "${@}" | egrep ^\? | cut -c9- | xargs -d \\n rm  -r
+}
+
 # shows only relevant changed files (for a java project)
-svs() {
+function svs {
 	svn st | grep -v -e ".classpath" -e "/bin" -e ".settings" -e ".project" -e "target"
 }
 
