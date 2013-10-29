@@ -43,7 +43,6 @@ function svnp {
 	sed -i s/"^."/""/g $CUSTOM_SVN/{updated,unversioned,added,removed}
 	sed -i s/"^       "/""/g $CUSTOM_SVN/{updated,unversioned,added,removed}
 	sed -i s/" "/"\\\ "/g $CUSTOM_SVN/{updated,unversioned,added,removed}
-
 }
 
 function svncm {

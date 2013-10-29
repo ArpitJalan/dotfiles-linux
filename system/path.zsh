@@ -9,6 +9,12 @@ if [ -d "${RBENV_ROOT}" ]; then
   eval "$(rbenv init -)"
 fi
 
+export RVM_ROOT="${HOME}/.rvm"
+if [ -d "${RVM_ROOT}" ]; then
+  export PATH=${PATH}:${RVM_HOME}/bin # Add RVM to PATH for scripting
+fi
+
+
 # play framework
 # export PLAY_HOME=/opt/play
 # export PATH="${PATH}:${PLAY_HOME}"
